@@ -9,6 +9,7 @@ elFinder configuration see http://elrte.org/redmine/projects/elfinder/wiki/Conne
 
 # Setup
 
+* Add catalog for files eg. uploaded-adm at DOCROOT. Chmod 777 catalog.
 * Add elFinder.css to <head> when you start elFinder. 
 <pre>
     <link rel="stylesheet" href="<?php echo URL::site(Route::get('elfinder_media')->uri(array('file' => 'css/elfinder.css')), TRUE); ?>" type="text/css" media="screen" />
