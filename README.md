@@ -11,14 +11,14 @@ elFinder configuration see http://elrte.org/redmine/projects/elfinder/wiki/Conne
 
 * Add catalog for files eg. uploaded-adm at DOCROOT. Chmod 777 catalog.
 * Add elFinder.css to <head> when you start elFinder. 
-<pre>
+``
     <link rel="stylesheet" href="<?php echo URL::site(Route::get('elfinder_media')->uri(array('file' => 'css/elfinder.css')), TRUE); ?>" type="text/css" media="screen" />
-</pre>
+``
 * Example of use ( View page file ):
-<pre>
+``
     <?php echo Kohana_elFinder::instance()->start('elFinder'); ?>
     <div id="elFinder">dsfdsfsda</div>
-</pre>
+``
     
 # Author
 Developer: Mateusz "retio" Lerczak - kiki.diavo@gmail.com
