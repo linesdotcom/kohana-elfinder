@@ -1,0 +1,26 @@
+# kohana-elfinder
+
+elFinder 1.2 integration module for Kohana 3.2.
+elFinder configuration see http://elrte.org/redmine/projects/elfinder/wiki/Connector_Configuration_EN#PHP
+
+# Requirements
+* jQuery
+* jQuery UI
+
+# Setup
+
+* Add elFinder.css to <head> when you start elFinder. 
+<pre>
+    <link rel="stylesheet" href="<?php echo URL::site(Route::get('elfinder_media')->uri(array('file' => 'css/elfinder.css')), TRUE); ?>" type="text/css" media="screen" />
+</pre>
+* Example of use ( View page file ):
+<pre>
+    <?php echo Kohana_elFinder::instance()->start('elFinder'); ?>
+    <div id="elFinder">dsfdsfsda</div>
+</pre>
+    
+# Author
+Developer: Mateusz "retio" Lerczak - kiki.diavo@gmail.com
+
+#License
+Kohana-elfinder is issued under a MIT license.
